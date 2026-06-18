@@ -1,0 +1,9 @@
+name: gps-telemetry
+
+services:
+  backend:
+    build: ./gps-telemetry-api
+    container_name: gps-telemetry-backend
+    ports:
+      - "8080:8080"
+    restart: unless-stopped
